@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="warnin" style="border-bottom: 2px solid #D02764 ">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard/tabs/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Reminder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="top:50px;">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Add Reminder</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+         <ion-item>
+          <ion-label position="floating">Title</ion-label>
+          <ion-input type="text"  [(ngModel)]="title"></ion-input>
+         </ion-item>
+         <ion-item>
+          <ion-input type="date" placeholder="Reminder Date" [(ngModel)]="date"></ion-input>
+         </ion-item>
+         <ion-item>
+          <ion-input type="time" placeholder="Reminder Time" [(ngModel)]="time"></ion-input>
+         </ion-item>
+         <ion-item>
+          <ion-label position="floating">Reminder Description</ion-label>
+          <ion-textarea [(ngModel)]="note"></ion-textarea>
+        </ion-item>
+        <br><br>
+        <ion-button type="submit" expand="block" (click)="add()" shape="round" >
+          Add Reminder
+        </ion-button>
+     
+      </ion-card-content>
+    </ion-card>
+</ion-content>

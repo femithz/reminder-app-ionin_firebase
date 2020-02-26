@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start" >
+            <ion-icon style="zoom:2.0;" large (click)="navigateToHome()" size="70" color="primary" name="arrow-round-back"></ion-icon>
+         </ion-buttons>
+       <ion-title>My Profile</ion-title>
+     </ion-toolbar>
+   </ion-header>
+
+   <ion-content >
+      <div id="profile-bg">
+        <!-- <input type="file" (change)="fileChanged($event)"> -->
+      </div>
+      <div id="content">
+        <div id="profile-info" *ngFor="let post of (userPosts | async)?.posts">
+          <img id="profile-image" src="../../../assets/cash 1.jpg">
+          <h3 id="profile-name">{{post.username}}</h3>
+          <span id="profile-email">
+            {{post.email}}
+          </span><br>
+          <span id="profile-num">
+             {{post.phone}}
+          </span>  
+        </div>
+      </div>
+      <!-- <ion-item-divider color="order">
+          <ion-icon color="primary"  name="wallet"></ion-icon>
+          &nbsp;&nbsp;
+          <ion-label color="primary">Wallet Balance</ion-label>
+          <ion-label color="primary">:NGN20,000:00</ion-label>
+    </ion-item-divider>
+    <br>
+    <ion-item-divider color="order">
+        <ion-icon color="primary"  name="cart"></ion-icon>
+        &nbsp;&nbsp;
+        <ion-label color="primary">Number of Order</ion-label>
+        <ion-label color="primary">:56</ion-label>
+  </ion-item-divider> -->
+    </ion-content>

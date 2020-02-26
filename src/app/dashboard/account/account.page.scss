@@ -1,0 +1,81 @@
+#profile-bg {
+    top: 154px;
+left: 13px;
+width: 405px;
+height: 217px;
+background: #172556 0% 0% no-repeat padding-box;
+opacity: 1;
+    // position: fixed;
+    // left: 0;
+    // top: 40px;
+    // width: 100%;
+    // height: 120px;
+    // //  background: url('../../../assets/icon/rfq.png') no-repeat transparent;
+    // background-color: #172556 ;
+    // background-size: 100%;
+    // background-position: 50% 20%;
+
+    // text-align: center;
+  }
+
+  #content {
+    position: relative;
+    margin-top: auto;
+    background-color: white;
+    box-shadow: 0px -1px 10px rgba(0,0,0,0.4);
+    padding-top: 217px;
+  }
+
+  #profile-info {
+    position: absolute;
+    top: -95px;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+  }
+  #profile-name {
+    color: #172556;
+    font-size: 26px;
+    text-align: center;
+  }
+  #profile-email {
+    font-size: 15px;
+    color: #172556;
+    text-align: center;
+  }
+  #profile-num {
+    font-size: 15px;
+    color: #172556;
+    text-align: center;
+  }
+  #profile-description a {
+    color: #172556;
+  }
+
+  #profile-image {
+    // display: block;
+    // border-radius: 100px;
+    // border: 1px solid #fff;
+    // width: 128px;
+    // height: 128px;
+    // margin: 30px auto 0;
+    // box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    top: 304px;
+left: 157px;
+width: 125px;
+height: 123px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #000000;
+opacity: 1;
+  }
+.order{
+    top: 648px;
+    left: 69px;
+    width: 330px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #000000;
+    opacity: 1;
+    color: #172556;
+    text-align: center
+}

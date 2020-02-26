@@ -1,0 +1,7 @@
+{
+  "name": "alabamarket-app-v1",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

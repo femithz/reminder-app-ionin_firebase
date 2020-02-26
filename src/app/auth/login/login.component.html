@@ -1,0 +1,55 @@
+ <ion-content ion-padding style="padding: 5% !important;">
+
+  <div class="cover">
+
+    <div class="logo">
+      <div class="egg-shape"></div>
+      <div class="egg-shape-purple"></div>
+      <div class="log">
+        Remind <span style="color: #D02764 !important;">Me</span>
+      </div>
+
+    </div>
+
+    <div class="top">
+      <span class="bolde">
+        Hello!
+      </span>
+      <p class="graph">
+        Please enter your details to sign in
+      </p>
+
+    </div>
+
+   
+
+      <ion-list style="margin-top: 5% !important;">
+       
+        
+        <br><br>
+        <ion-item>
+            <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+            <ion-icon name="mail" slot="start"></ion-icon>
+        </ion-item>
+         <br><br>
+         <ion-item>
+           <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+           <ion-icon name="lock" slot="start"></ion-icon>
+         </ion-item>
+         <br><br>
+         <ion-button type="submit" expand="block" (click)="navigateToDashboard()" shape="round" >Log in</ion-button>
+      
+
+        <div style="text-align: center !important; margin-top: 15% !important;">
+          Don’t have an account? <span (click)="navigateToSignup()" style="color:  #D02764;">Sign Up</span>
+        </div>
+      </ion-list>
+
+
+  </div>
+  <ion-footer style="margin-bottom: 0 !important; padding-bottom: 1% !important; bottom: 0% !important;">
+    <div style="text-align: center; bottom: 0 !important; margin-bottom: 0% !important; padding-bottom: 0% !important; padding-top: 10% !important; font-family: Poppins;">
+      copyright © Remind<span style="color: #D02764 !important;">Me</span>
+    </div>
+  </ion-footer>
+</ion-content>

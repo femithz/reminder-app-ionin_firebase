@@ -1,0 +1,68 @@
+<ion-content ion-padding style="padding: 5% !important;">
+  <div class="cover">
+
+    <div class="logo">
+      <div class="egg-shape"></div>
+      <div class="egg-shape-purple"></div>
+      <div class="log">
+        Remind <span style="color: #D02764 !important;">Me</span>
+      </div>
+
+    </div>
+
+    <div class="top">
+      <span class="bolde">
+        Register!
+      </span>
+    
+
+    </div>
+
+   
+
+      <ion-list style="margin-top: 5% !important;">
+       
+        
+        <ion-item>
+          <ion-label position="floating">Email Address</ion-label>
+          <ion-input type="email" [(ngModel)]="email" ></ion-input>
+          <ion-icon name="mail" slot="start"></ion-icon>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type="text" [(ngModel)]="username"></ion-input>
+            <ion-icon name="person-add" slot="start"></ion-icon>
+        </ion-item>
+      
+       
+        <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="Password" [(ngModel)]="password"></ion-input>
+            <ion-icon name="lock" slot="start"></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Confirm Password</ion-label>
+            <ion-input type="Password" [(ngModel)]="cpassword" show-hide-input></ion-input>
+            <ion-icon name="lock" slot="start" ></ion-icon>
+        </ion-item>   
+        <br>   
+        <ion-button expand="block" (click)="register()" shape="round">Register</ion-button>
+          <p class="unlink center">
+            Already have an account ? 
+              <a  (click)="navigateToLogin()">
+                  Login
+              </a>
+          </p>
+          <br>
+      </ion-list>
+
+
+  </div>
+  <ion-footer style="margin-bottom: 0 !important; padding-bottom: 1% !important; bottom: 0% !important;">
+    <div style="text-align: center; bottom: 0 !important; margin-bottom: 0% !important; padding-bottom: 0% !important; padding-top: 10% !important; font-family: Poppins;">
+      copyright © Remind<span style="color: #D02764 !important;">Me</span>
+    </div>
+  </ion-footer>
+</ion-content>
+

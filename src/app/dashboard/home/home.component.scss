@@ -1,0 +1,37 @@
+.ion-slides{
+    height: 300px;
+}
+
+.categories{
+    height: 80px;
+}
+.categories .catsName{
+    font-size: 10px;
+}
+
+.font{
+    bottom:1px;
+    font-size: 25px;
+    margin-top: 10px;
+    font: Semibold 10px/17px Segoe UI !important;
+    letter-spacing: 0;
+    margin-left:2px;
+}
+.ion-size{
+    font-size: 25px;
+    color:var(--ion-color-primary);
+    margin-right: 2px;
+    cursor: pointer;
+}
+.not{
+    margin-right: 1rem;
+}
+.category-banner{
+    border-left: 8px solid var(--ion-color-primary);
+    background: var(--ion-color-light);
+    height: 40px;
+    padding: 10px;
+    font-weight: 500;
+    color: #060238;
+    text-align: center;
+}
