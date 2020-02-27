@@ -4,6 +4,7 @@ import { LoadingController, AlertController } from '@ionic/angular';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AuthService } from 'src/app/provider/auth.service';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @Component({
   selector: 'app-add-reminder',
@@ -12,7 +13,7 @@ import { AuthService } from 'src/app/provider/auth.service';
 })
 export class AddReminderPage implements OnInit {
   title : string = "";
-  time: string = "";
+  time:string = "" ;
   date: string = "";
   note: string = "";
   constructor(
@@ -21,7 +22,8 @@ export class AddReminderPage implements OnInit {
     private user: AuthService,
      private afAuth: AngularFireAuth, 
      private afstore:AngularFirestore,
-      private alert: AlertController) { }
+      private alert: AlertController,
+      private localNotifications: LocalNotifications) { }
 
   ngOnInit() {
   }
@@ -45,6 +47,12 @@ export class AddReminderPage implements OnInit {
         note,
       })
       this.showAlert("Success","Reminder added!");
+      this.localNotifications.schedule({
+        text: note,
+        trigger: {at : new Date(new Date(date).getTime() + this.time) },
+        led: 'FF0000',
+        sound: null
+      });
       this.router.navigate(['/dashboard/tabs/reminder']);
     } catch (err) {
       this.showAlert("Error", err.message)

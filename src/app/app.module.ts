@@ -14,7 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment.prod';
 import { AuthService } from './provider/auth.service';
-import { LocalNotifications } from '@ionic-native/local-notifications/index'
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @NgModule({
   declarations: [AppComponent],
